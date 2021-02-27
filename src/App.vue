@@ -1,11 +1,19 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-view/>
+    <main-tab-bar></main-tab-bar>
   </div>
-  <router-view/>
-</template>
 
+</template>
+<script>
+import MainTabBar from './components/contant/MainTabBar/MainTabBar'
+
+export default {
+  components:{
+    MainTabBar
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
